@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Character</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="form">
+        <label for="race">Race</label>
+        <select id="race" name="race">
+            <option value="select">Please select</option>
+            <option value="astralelf">Astral elf</option>
+            <option value="autognome">Autognome</option>
+            <option value="centaur">Centaur</option>
+            <option value="dwarf">Dwarf</option>
+            <option value="goblin">Goblin</option>
+        </select>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Start typing your name">
+
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender">
+            <option value="select">Please select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="nonbinary">Nonbinary</option>
+        </select>
+
+        <label for="classe">Class</label>
+        <select id="classe" name="classe">
+            <option value="select">Please select</option>
+            <option value="barbarian">Barbarian</option>
+            <option value="monk">Monk</option>
+            <option value="wizard">Wizard</option>
+            <option value="druid">Druid</option>
+            <option value="ranger">Ranger</option>
+        </select>
+
+    </div>
+
+    <div id="sheet">
+        
+        
+        <div id="character-card" style="background-image: url('img/placeholder_card-100.jpg'); background-size: cover; width: 300px; height: 400px;">
+            <p id="nameinput"></p>
+            <div id="icons">
+                <div id="gender-card">
+                </div>
+                <div id="class-card">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
